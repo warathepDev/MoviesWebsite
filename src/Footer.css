@@ -1,0 +1,31 @@
+.footer{
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    width: 100%;
+
+}
+
+
+.footer-con{
+    padding: 2rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background: linear-gradient(111deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.1) );
+    backdrop-filter: blur(10px);
+    margin-top: 2rem;
+
+}
+
+.report a{
+    color: #fff;
+    font-size: 20px;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+
+.report a:hover{
+    color: rgb(92, 92, 92);
+}

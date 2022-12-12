@@ -1,0 +1,114 @@
+.movieCard{
+    /* background: linear-gradient(111deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.3) ); */
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    /* height: 150px; */ 
+    /* padding: 1rem; */
+    margin: 10px;
+}
+
+.title{
+    /* border:1px solid red; */
+    /* background:#3d5483; */
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding: 10px;
+    display: none;
+}
+
+.btn-add h1{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.8) ;
+    opacity: 0;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    text-transform: uppercase;
+    font-size: 15px;
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    transition: .5s ease;
+
+}
+.poster{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(111deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.3) );
+    border-radius: 15px;
+
+
+}
+
+.poster:hover img{
+    background-size: cover;
+    opacity: 0.6;
+}
+
+.poster:hover h1{
+    opacity: 1;
+    top: 2%;
+}
+
+.poster:hover .add {
+    opacity: 1;
+    top: 92%;
+
+}
+
+.poster img{
+    width: 100%;
+    transition: .5s ease;
+    opacity: 1;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+
+
+}
+.vote{
+    position: absolute;
+    opacity: 0;
+}
+
+.vote {
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    display: none;
+}
+
+.add{
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    content: attr(data-hover);
+    font-size: 40px;
+    color: #fff;
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 500;
+    margin-left: 3px ;
+    text-transform: uppercase;
+    transition: .5s ease;
+    overflow: hidden;
+}
+
+.add:hover{
+    font-size: 43px;
+    transition: .5s ease;
+
+}
+
